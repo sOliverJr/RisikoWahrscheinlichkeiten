@@ -1,9 +1,10 @@
 public class Risiko{
+    
+    // Sieg <=> Verteidiger gewinnt die auseinanderstzung
     double wahrsch_sieg;
     double wahrsch_verlust;
     double wahrsch_unentschieden;
 
-    // Sieg <=> Verteidiger gewinnt die auseinanderstzung
     int anzahl_siege = 0, anzahl_verluste = 0, anzahl_unentschieden = 0, anzahl_gesamt = 0;
 
     int würfel_angreifer_1 = 1, würfel_angreifer_2 = 1, würfel_angreifer_3 = 1;
@@ -74,6 +75,8 @@ public class Risiko{
             würfel_angreifer_2 = 1;
             würfel_angreifer_1 ++;
         }
+
+        // Aus irgendeinem Grund werden die Werte nicht in die Double-Var. gespeichert
         wahrsch_sieg = anzahl_siege / anzahl_gesamt;
         wahrsch_unentschieden = anzahl_unentschieden / anzahl_gesamt;
         wahrsch_verlust = anzahl_verluste / anzahl_gesamt;
