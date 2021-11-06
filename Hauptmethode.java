@@ -2,6 +2,7 @@ public class Hauptmethode {
     public static void main(String[] args) {
         System.out.println();
 
+
         // Aus Sicht von einem Angreifer
         System.out.println("Aus der Sicht des Angreifers:");
         System.out.println("Anzahl Angreifer:       Anzahl Verteidiger:         W(Sieg):        W(Verlust):       W(Unentschieden): "); 
